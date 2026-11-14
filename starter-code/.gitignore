@@ -1,0 +1,16 @@
+# Terraform
+**/.terraform/
+**/.terraform.lock.hcl
+**/terraform.tfstate
+**/terraform.tfstate.backup
+**/*.tfplan
+
+# Helm
+**/charts/*.tgz
+
+# Monitoring
+monitoring/.env
+
+# Local Terraform values with passwords (copy the .example file)
+infra/helm/terraform/terraform.tfvars
+infra/kubernetes/terraform/terraform.tfvars

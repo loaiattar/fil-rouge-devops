@@ -1,0 +1,8 @@
+Application installée.
+
+Port-forward :
+  kubectl port-forward -n {{ .Release.Namespace }} svc/{{ include "devops-app.fullname" . }}-svc 18080:{{ .Values.service.port }}
+
+Vérification :
+  curl http://localhost:18080/
+  curl http://localhost:18080/health
